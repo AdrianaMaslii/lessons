@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+main{
+    display: grid;
+    grid-template-columns: 100px 100px;
+    gap: 10px;
+    grid-area: ma;
+}
+.box{
+    background-color: black;
+    color: aliceblue;
+}
+.box:nth-child(1){
+    background-color: brown;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    display: grid;
+    place-content: center;
+}
+body{
+    display: grid;
+    grid-template-areas: 
+    "he he he he he"
+    "na ma ma ma ma"
+    "fo fo fo fo fo";
+}
+header{
+    background-color: rgb(255, 195, 122);
+    grid-area: he;
+}
+nav{
+    background-color: blanchedalmond;
+    grid-area: na;
+}
+footer{
+    background-color: rgb(245, 233, 183);
+    grid-area: fo;
+}
